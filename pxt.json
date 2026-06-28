@@ -1,6 +1,5 @@
 {
     "name": "neopixel-tutorial",
-    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -11,7 +10,8 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "tutorial.md"
+        "tutorial.md",
+        "tutorial-matrix.md"
     ],
     "testFiles": [
         "test.ts"
