@@ -1,5 +1,6 @@
 {
     "name": "neopixel-tutorial",
+    "version": "0.0.2",
     "description": "",
     "dependencies": {
         "core": "*",
