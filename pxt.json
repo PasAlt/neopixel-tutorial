@@ -12,7 +12,8 @@
         "main.ts",
         "README.md",
         "tutorial.md",
-        "tutorial-matrix.md"
+        "tutorial-matrix.md",
+        "tutorial-matrix-wiring.md"
     ],
     "testFiles": [
         "test.ts"
