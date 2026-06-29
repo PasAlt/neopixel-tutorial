@@ -7,4 +7,4 @@ This github Repo holds multiple Tutorials for (Micro:Bit MakeCode)[https://makec
 
 > Open this page at [https://pasalt.github.io/neopixel-tutorial/](https://pasalt.github.io/neopixel-tutorial/)
 
-
+All the tutorials (including images if not noted differently) are provided under CC-BY by Pascal Zaugg. Code is licensed under MIT.
