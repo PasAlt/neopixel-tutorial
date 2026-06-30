@@ -20,7 +20,7 @@ Manchmal haben die NeoPixel keine gute Kontakte, um die sie einfach zu verbinden
 
 ## ~ avatar
 
-Du hast nun alles zusammen, um mit dem Tutorial 
+Du hast nun alles zusammen, um mit dem Tutorial zu starten.
 
 ## ~
 
@@ -81,14 +81,17 @@ strip.show()
 
 ## Connect NeoPixel strip with Micro:Bit
 
+In diesem Abschnitt verbindest du Micro:Bit mit dem NeoPixel.
+
 ### Connect both of the ground cable.
 
+Der Anschluss mit dem Namen GND direkt neben dem Anschluss mit dem Namen VCC (manchmal auch VDC) wird mit dem Minuspol der Batterie verbunden.
 The one right beside the "5 VCC" label goes to the battery.
 The one right beside the "DIN" label goes to the ground of the Micro:Bit called GND.
 
 ## ~ hint
 
-We use black cables for ground of the power supply. A green cable for the ground of the signal cable. 
+We use black cables for ground of the power supply. A white cable for the ground of the signal cable. 
 
 The longer flap of the battery is usually the negative pol of the battery.
 
@@ -96,7 +99,7 @@ The longer flap of the battery is usually the negative pol of the battery.
 
 ## ~ avatar
 
-You have now connected two cables: One for the power supply cicuit and one for the signal circuit. In the next step we will have to close both of them.
+You have now the two ground cables connected: One for the power supply cicuit and one for the signal circuit. In the next step we will have to close both of them.
 
 ## ~
 

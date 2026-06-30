@@ -12,6 +12,8 @@ You will need
 * 4 cables to connect battery and NeoPixel strip
 * Micro:Bit with USB-Cable
 
+![equipment](/static/equipment.png)
+
 ## ~ avatar
 
 You have now everything you need to start this tutorial
@@ -75,28 +77,28 @@ strip.show()
 
 ### Connect both of the ground cable.
 
-The one right beside the "5 VCC" label goes to the battery.
-The one right beside the "DIN" label goes to the ground of the Micro:Bit called GND.
+The pin named GND besides the "VDC" label (sometimes "VCC") goes to the negative terminal of the battery.
+The pin named GND right beside the "DIN" label (sometimes "DI") goes to the ground pin of the Micro:Bit called "GND".
 
 ## ~ hint
 
-We use black cables for ground of the power supply. A green cable for the ground of the signal cable. 
+We use black cables for ground of the power supply and a white cable for the ground of the signal cable. 
 
-The longer flap of the battery is usually the negative pol of the battery.
+The longer flap of the battery is usually the negative terminal of the battery.
 
 ## ~
 
 ## ~ avatar
 
-You have now connected two cables: One for the power supply cicuit and one for the signal circuit. In the next step we will have to close both of them.
+You have now connected the two ground cables: One for the power supply cicuit and one for the signal circuit. In the next step we will have to close both of them.
 
 ## ~
 
 ### Connect power cable then the signal cable
 
-Connect a cable from the battery (+) to the "5 VCC" labelled connection.
+Connect a cable from the battery (+) to the "VDC" (sometimes "VCC") labelled pin.
 
-Connect a cable from the Micro:Bit to the "DIN" labelled connection. This is our signal that we will use to control the NeoPixels with our Micro:Bit.
+Connect a cable from the Micro:Bit to the "DIN" (sometimes "DI") labelled connection. This is our signal that we will use to control the NeoPixels with our Micro:Bit.
 
 ![Shows the connected Micro:Bit](/img/connected-micro-bit.png)
 
@@ -104,14 +106,14 @@ Connect a cable from the Micro:Bit to the "DIN" labelled connection. This is our
 
 We use red cables from the power source to the device and green cables for the signal.
 
-The shorter flap of the battery is usually the positive pol of the battery.
+The shorter flap of the battery is usually the positive terminal of the battery.
 
 ## ~
 
 ## ~ avatar
 
-You have now closed both circuits. The power supply circuit with the red cable and the signal cicuit with the white cable.
-
+You have now closed both circuits. The power supply circuit with the red and black cable and the signal cicuit with the green and white cable.
+d
 ## ~
 
 ### Connect your Micro:bit with your computer
@@ -144,4 +146,4 @@ Still not working? Ask somebody for support (e.g. your teacher).
 let strip = neopixel.create(DigitalPin.P0, 8, NeoPixelMode.RGB)
 strip.setColor(0xff0000)
 strip.show()
-```
+```-
