@@ -12,7 +12,7 @@ You will need
 * 4 cables to connect battery and NeoPixel strip
 * Micro:Bit with USB-Cable
 
-![equipment](/static/equipment.png)
+![equipment](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/docs/static/tutorial-equipment.jpg)
 
 ## ~ avatar
 
