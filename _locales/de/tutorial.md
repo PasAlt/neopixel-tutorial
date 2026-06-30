@@ -12,17 +12,19 @@ Du brauchst:
 * 4 Kabel, um die Battrie und den Neopixel-Streifen zu verbinden
 * ein Micro:Bit mit passendem USB-Kabel
 
-## ~ hint
+![equipment](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/docs/static/tutorial-equipment.jpg)
+
+### ~ hint
 
 Manchmal haben die NeoPixel keine gute Kontakte, um die sie einfach zu verbinden. Du wirst eine passenden Verbindung anlöten müssen (oder jemanden fragen die/der das für dich macht).
 
-## ~
+### ~
 
-## ~ avatar
+### ~ avatar
 
 Du hast nun alles zusammen, um mit dem Tutorial zu starten.
 
-## ~
+### ~
 
 ## Erstelle den NeoPixel Treiber
 
@@ -32,11 +34,11 @@ Dein NeoPixel Streifen enthält 8 NeoPixel. Du musst also die Anzahl NeoPixel au
 
 Den Rest kannst du so lassen wie es ist.
 
-## ~ avatar
+### ~ avatar
 
 Du hast jetzt ein Objekt zum Steuern deiner NeoPixel erstellt. Ein Objekt, dass Hardware, wie deinen NeoPixel, steuert nennen wir Treiber. Diese Objekt hast du in der Variable ``strip`` gespeichert.
 
-## ~
+### ~
 
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 8, NeoPixelMode.RGB)
@@ -50,11 +52,11 @@ Wähle eine Farbe aus indem du auf das Farbelement drückst.
 
 Mit dem bisherigen Programm werden deine NeoPixel noch nicht aufleuchten, wenn du Download drückst. Wir haben bisher die Farbe nur gespeichert und müssen sie nun noch auf den NeoPixel Streifen übertragen.
 
-## ~ avatar
+### ~ avatar
 
 Du hast jetzt deine Farbe im Zwischenspeicher abgelegt. Im nächsten Schritt lassen wir nun deine NeoPixel aufleuchten.
 
-## ~
+### ~
 
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 8, NeoPixelMode.RGB)
@@ -67,11 +69,11 @@ strip.setColor(0xff0000)
 
 Drücke "Start", um deine NeoPixel im Simulator auf der linken Seite leuchten zu sehen.
 
-## ~ avatar
+### ~ avatar
 
 Du hast nun dein Programm, um die NeoPixel leuchten zu lassen, fertig geschrieben. Nun ist es an der Zeit, dass du deinen NeoPixel Streifen mit dem Micro:Bit verbindest.
 
-## ~
+### ~
 
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 8, NeoPixelMode.RGB)
@@ -89,19 +91,19 @@ Der Anschluss mit dem Namen GND direkt neben dem Anschluss mit dem Namen VCC (ma
 The one right beside the "5 VCC" label goes to the battery.
 The one right beside the "DIN" label goes to the ground of the Micro:Bit called GND.
 
-## ~ hint
+### ~ hint
 
 We use black cables for ground of the power supply. A white cable for the ground of the signal cable. 
 
 The longer flap of the battery is usually the negative pol of the battery.
 
-## ~
+### ~
 
-## ~ avatar
+### ~ avatar
 
 You have now the two ground cables connected: One for the power supply cicuit and one for the signal circuit. In the next step we will have to close both of them.
 
-## ~
+### ~
 
 ### Connect power cable then the signal cable
 
@@ -111,19 +113,19 @@ Connect a cable from the Micro:Bit to the "DIN" labelled connection. This is our
 
 ![Shows the connected Micro:Bit](/img/connected-micro-bit.png)
 
-## ~ hint
+### ~ hint
 
 We use red cables from the power source to the device and green cables for the signal.
 
 The shorter flap of the battery is usually the positive pol of the battery.
 
-## ~
+### ~
 
-## ~ avatar
+### ~ avatar
 
 You have now closed both circuits. The power supply circuit with the red cable and the signal cicuit with the white cable.
 
-## ~
+### ~
 
 ### Connect your Micro:bit with your computer
 
@@ -131,11 +133,11 @@ Connect your Micro:Bit with your computer, press "Download" and see your NeoPixe
 
 Your NeoPixel do not glow? Check next part for trouble shooting.
 
-## ~ avatar
+### ~ avatar
 
 Congratulations! You finished your first small project with NeoPixels by letting them glow in one color.
 
-## ~
+### ~
 
 ## Troubleshooting 
 
