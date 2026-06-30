@@ -5,6 +5,7 @@ neopixel=github:PasAlt/pxt-neopixel-matrix-extension
 ```
 
 ## Introduction
+
 A NeoPixel Matrix is composed of multiple NeoPixels wired together in series on a two dimensional grid. 
 
 They are in almost all cases wired in rows. Those rows can then be wired in different ways. 
@@ -12,20 +13,29 @@ They are in almost all cases wired in rows. Those rows can then be wired in diff
 The most important difference is in which direction the first row starts. Either from left to right or from right to left.
 
 ### Additional information
+
 In most cases the rows are connected like a "snake" meaning that even rows run in one direction and odd rows run in the other direction. 
 
+### ~ alert
+
 In some rare cases rows are connected that each row starts in the same direction. This wiring is unfortunately currently not supported in this extension.
+
+### ~
 
 ## Set up rainbow pattern
 We are now setting the Micro:Bit up to show a rainbox pattern on the NeoPixel matrix. We will use that pattern to determine that start and direction of the wiring. Where the first NeoPixel will have a red color and the last NeoPixel will be a violet color. 
 
 Open the NeoPixel tab on the left side. Then select the first element called **``set strip to..``** and drag it into the **``on start``** block. 
 
-### Create NeoPixel driver
 Set the number of NeoPixels to the number of NeoPixels on your matrix, e.g. for a five times 5 matrix it would be 25.
 
-### Use rainbox pattern
-Drag the block **``show rainbow``** from the advanced block in the NeoPixel tab into the Editor. Set it below the previous block. Set starting value to 1 (red) and end value to 270 (violet).
+```blocks
+let strip = neopixel.create(DigitalPin.P0, 25, NeoPixelMode.RGB)
+```
+
+## Use rainbox pattern
+
+Drag the block **``||neopixel:show rainbow||``** from the advanced block in the NeoPixel tab into the Editor. Set it below the previous block. Set starting value to 1 (red) and end value to 270 (violet).
 
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 25, NeoPixelMode.RGB)

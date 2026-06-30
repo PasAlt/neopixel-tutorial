@@ -1,53 +1,59 @@
-# NeoPixel Beginner Tutorial
+# NeoPixel-Einführung für Anfänger*innen
 
 ```package
 neopixel=github:PasAlt/pxt-neopixel-matrix-extension
 ```
 
-## Get the necessary equipment
+## Besorge das benötigte Material
 
-You will need
-* 4.5 V battery (e.g. LR12)
-* NeoPixel strip with 8 NeoPixels
-* 4 cables to connect battery and NeoPixel strip
-* Micro:Bit with USB-Cable
-
-## ~ avatar
-
-You have now everything you need to start this tutorial
-
-## ~
+Du brauchst:
+* eine 4.5 V Batterie (z.B. LR12)
+* ein NeoPixel-Streifen mit 8 NeoPixeln
+* 4 Kabel, um die Battrie und den Neopixel-Streifen zu verbinden
+* ein Micro:Bit mit passendem USB-Kabel
 
 ## ~ hint
 
-Sometimes NeoPixel strips don't have connections that can easily be connected to.  You will have to solder that part on (or ask your teacher to do it).
+Manchmal haben die NeoPixel keine gute Kontakte, um die sie einfach zu verbinden. Du wirst eine passenden Verbindung anlöten müssen (oder jemanden fragen die/der das für dich macht).
 
 ## ~
 
-## Initialize NeoPixel Object
+## ~ avatar
 
-Open the NeoPixel tab on the left side. Drag the top block called **``||neopixel:set strip to..||``** into the already existing **``||basics:on start||``** block. 
+Du hast nun alles zusammen, um mit dem Tutorial 
 
-Your NeoPixel is 8 elements long. Therefore, change the number of leds to 8 Neopixels by clicking in it and pressing 8 on your keyboard.
+## ~
 
-You can leave the rest as it is.
+## Erstelle den NeoPixel Treiber
+
+Öffne den NeoPixel-Reiter auf der linken Seite. Ziehe das Element mit dem Namen **``||neopixel:Setze strip auf..||``** in den bereits vorhandenen **``||basics:beim Start||``** Block.
+
+Dein NeoPixel Streifen enthält 8 NeoPixel. Du musst also die Anzahl NeoPixel auf 8 setzten. Das machst du indem auf auf weisse Feld nach dem **``mit``** drückst und auf der Tastatur die Nummer 8 drückst.
+
+Den Rest kannst du so lassen wie es ist.
 
 ## ~ avatar
-You have now created an object (in our case a so called driver) called 'strip' that represents your NeoPixels.
+
+Du hast jetzt ein Objekt zum Steuern deiner NeoPixel erstellt. Ein Objekt, dass Hardware, wie deinen NeoPixel, steuert nennen wir Treiber. Diese Objekt hast du in der Variable ``strip`` gespeichert.
+
 ## ~
 
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 8, NeoPixelMode.RGB)
 ```
 
-## Set Colors for the NeoPixels
+## Setze dir Farben deines NeoPixel Streifen
 
-Drag the block **``||neopixel:setColor||``** from the tab NeoPixel below the **``||neopixel:set strip||``** block. Choose a color you like by clicking on the color element. 
+Ziehe den Block **``||neopixel:setzte alle NeoPixel auf Farbe||``** aus dem Tab NeoPixel unter den Block **``||neopixel:Setze strip auf..||``** Block. 
 
-This part will not let the NeoPixels glow immediately but store what color was set.
+Wähle eine Farbe aus indem du auf das Farbelement drückst. 
+
+Mit dem bisherigen Programm werden deine NeoPixel noch nicht aufleuchten, wenn du Download drückst. Wir haben bisher die Farbe nur gespeichert und müssen sie nun noch auf den NeoPixel Streifen übertragen.
 
 ## ~ avatar
-You have now stored the color of your NeoPixels in the buffer. See the next step to let the NeoPixels glow.
+
+Du hast jetzt deine Farbe im Zwischenspeicher abgelegt. Im nächsten Schritt lassen wir nun deine NeoPixel aufleuchten.
+
 ## ~
 
 ```blocks
@@ -57,12 +63,14 @@ strip.setColor(0xff0000)
 
 ## Show 
 
-Open the tab NeoPixel again and drag the element **``||neopixel:show||``**  below your current blocks.
+Öffne den NeoPixel Tab erneut. Ziehe das Element **``||neopixel:Veränderungen anzeigen||``** unterhalb deiner bisherigen Blücke.
 
-Press start to watch your NeoPixels glow in the simulator.
+Drücke "Start", um deine NeoPixel im Simulator auf der linken Seite leuchten zu sehen.
 
 ## ~ avatar
-You finished your code to let your NeoPixels glow. It is now time to connect your NeoPixels to the Micro:Bit.
+
+Du hast nun dein Programm, um die NeoPixel leuchten zu lassen, fertig geschrieben. Nun ist es an der Zeit, dass du deinen NeoPixel Streifen mit dem Micro:Bit verbindest.
+
 ## ~
 
 ```blocks

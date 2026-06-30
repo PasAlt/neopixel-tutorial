@@ -13,7 +13,8 @@
         "README.md",
         "tutorial.md",
         "tutorial-matrix.md",
-        "tutorial-matrix-wiring.md"
+        "tutorial-matrix-wiring.md",
+        "_locales/de/tutorial.md"
     ],
     "testFiles": [
         "test.ts"
