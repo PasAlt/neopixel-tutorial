@@ -41,11 +41,11 @@ Running this command will store the colors into a buffer. The NeoPixel matrix wi
 let strip = neopixelExtended.create(DigitalPin.P0, 25, neopixelExtended.Format.RGB)
 basic.forever(function () {
     strip.setMatrix25(
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
     )
 })
 ```
@@ -58,7 +58,7 @@ Drag the block **``||neopixelExtended:neopixelExtended: show changes||``** below
 Run the programm by pressing the download button. You should see your NeoPixel glow up with your colors. 
 
 ```blocks
-let strip = neopixel.create(DigitalPin.P0, 25, NeoPixelMode.RGB)
+let strip = neopixelExtended.create(DigitalPin.P0, 25, NeoPixelMode.RGB)
 basic.forever(function () {
     strip.setMatrix25(
         neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
@@ -102,23 +102,23 @@ Then change the colors in the second ``set Neopixel 5x5`` block that it represen
 Run the program by pressing download.
 
 ```blocks
-let strip = neopixel.create(DigitalPin.P0, 25, NeoPixelMode.RGB)
+let strip = neopixelExtended.create(DigitalPin.P0, 25, NeoPixelMode.RGB)
 basic.forever(function () {
     strip.setMatrix25(
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
     )
     strip.show()
     basic.pause(1000)
     strip.setMatrix25(
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xE60026, 0xff0000),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
-    neopixel.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700)
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xE60026, 0xff0000),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
+    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700)
     )
     strip.show()
     basic.pause(1000)
