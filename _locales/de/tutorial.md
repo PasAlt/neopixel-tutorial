@@ -1,7 +1,7 @@
 # NeoPixel-Einführung für Anfänger*innen
 
 ```package
-neopixelExtended=github:PasAlt/pxt-neopixel-matrix-extension
+neopixelExtended=github:PasAlt/pxt-neopixel-matrix-extension#
 ```
 
 ## Besorge das benötigte Material
@@ -16,7 +16,7 @@ Du brauchst:
 
 ### ~ hint
 
-Manchmal haben die NeoPixel keine gute Kontakte, um die sie einfach zu verbinden. Du wirst eine passenden Verbindung anlöten müssen (oder jemanden fragen die/der das für dich macht).
+Manchmal haben die NeoPixel keine passenden Kontakte, um die sie einfach zu verbinden. Du wirst eine passenden Verbindung anlöten müssen (oder jemanden fragen die/der das für dich macht).
 
 ### ~
 
@@ -145,7 +145,7 @@ Herzliche Gratulation! Du hast deine erstes Projekt mit dem NeoPixel beendet und
 Dass deine NeoPixel nicht leuchten, kann verschiedene Gründe haben.
 
 Überprüfe:
-* deinen Code, insbesondere, dass du am Schluss **``neopixelExtended:Änderungen anzeigen``** eingefügt hast.
+* deinen Code, insbesondere, dass du am Schluss **``||neopixelExtended:Änderungen anzeigen||``** eingefügt hast.
 * all deine Kabelanschlüsse, insbesondere dass sie richtig und gut angeschlossen sind. Überprüfe alle Verbindungen und vergleich sie mit dem Bild. Verwende Farben, um die verschiedenen Verbindungen auseinanderhalten zu können.
 * das Signal. Das Signal wird nur einmal am Anfang versendet. Versende das Signal nochmal indem du erneut "Herunterladen" drückst.
 * deinen Batteriestand. Falls du unsicher bist, ob sie genügend Energie hat, dann verwende eine neue Batterie.
