@@ -1,7 +1,7 @@
 # NeoPixel Beginner Tutorial
 
 ```package
-neopixelExtended=github:PasAlt/pxt-neopixel-matrix-extension
+neopixelExtended=github:PasAlt/pxt-neopixel-matrix-extension#v2.0.4
 ```
 
 ## Get the necessary equipment
