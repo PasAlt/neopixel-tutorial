@@ -65,7 +65,7 @@ strip.setColor(0xff0000)
 
 ## Farben auf dem NeoPixel anzeigen
 
-Öffne den NeoPixel Tab erneut. Ziehe das Element **``||neopixelExtended:Veränderungen anzeigen||``** unterhalb deiner bisherigen Blücke.
+Öffne den NeoPixel Tab erneut. Ziehe das Element **``||neopixelExtended:Änderungen anzeigen||``** unterhalb deiner bisherigen Blücke.
 
 Drücke "Start", um deine NeoPixel im Simulator auf der linken Seite leuchten zu sehen.
 
@@ -156,7 +156,7 @@ Dass deine NeoPixel nicht leuchten, kann verschiedene Gründe haben.
 Funktioniert es noch immer nicht? Frage jemanden zur Unterstüztung, z.B. eine Mitschüler:in oder deine Lehrperson.
 
 ```blocks
-let strip = neopixelExtended(DigitalPin.P0, 8, neopixelExtended.Format.RGB)
+let strip = neopixelExtended.create(DigitalPin.P0, 8, neopixelExtended.Format.RGB)
 strip.setColor(0xff0000)
 strip.show()
 ```
