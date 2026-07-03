@@ -15,7 +15,7 @@
         "tutorial-matrix.md",
         "tutorial-matrix-wiring.md",
         "_locales/de/tutorial.md",
-        "tutorial-dummy-test2.md"
+        "tutorial-dummy-test3.md"
     ],
     "testFiles": [
         "test.ts"
