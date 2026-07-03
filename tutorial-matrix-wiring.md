@@ -1,7 +1,7 @@
 # Tutorial Matrix Wiring
 
 ```package
-neopixelExtended=github:PasAlt/pxt-neopixel-matrix-extension
+neopixel-extended=github:PasAlt/pxt-neopixel-matrix-extension#v2.0.7
 ```
 
 ## Introduction

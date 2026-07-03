@@ -1,7 +1,7 @@
 # Tutorial NeoPixel matrix
 
 ```package
-neopixelExtended=github:PasAlt/pxt-neopixel-matrix-extension#v2.0.5
+neopixel-extended=github:PasAlt/pxt-neopixel-matrix-extension#v2.0.7
 ```
 
 ## Connect NeoPixel matrix with Micro:Bit
