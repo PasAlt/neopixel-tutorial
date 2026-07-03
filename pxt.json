@@ -5,7 +5,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "neopixel-extended": "github:PasAlt/pxt-neopixel-matrix-extension#v2.0.2"
     },
     "files": [
         "main.blocks",
