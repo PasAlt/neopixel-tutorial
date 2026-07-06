@@ -4,13 +4,13 @@
 neopixel-extended=github:PasAlt/pxt-neopixel-matrix-extension
 ```
 
-## Connect NeoPixel matrix with Micro:Bit
+## Connect NeoPixel matrix with micro:bit
 
 In this tutorial you will learn how to use the matrix blocks in the NeoPixel extension.
 
 You will create a matrix that changes between the letters "O" and "K" each second. 
 
-Connect your NeoPixel matrix with the Micro:Bit on Pin 0.
+Connect your NeoPixel matrix with the micro:bit on Pin 0.
 
 If you have never used a NeoPixel and don't know how to connect it then please start with the [beginner tutorial](https://makecode.microbit.org/#tutorial:github:pasalt/neopixel-tutorial/tutorial).
 
@@ -27,11 +27,11 @@ let strip = neopixelExtended.create(DigitalPin.P0, 25, neopixelExtended.Format.R
 ```
 
 ## Set the matrix colors
+To let the NeoPixel matrix glow you will use the **``set Neopixel 5x5``** block.
+
 We will use the **``forever``** block to change between two screens. 
 
-To let the NeoPixel matrix glow you will use the **``||neopixelExtended:set Neopixel 5x5||``** block.
-
-Drag the ``set Neopixel 5x5`` into the ``forever`` block.
+Drag the **``||neopixelExtended:set Neopixel 5x5||``** into the **``||forever||``** block.
 
 Change the colors on the matrix by clicking on the colors. Change the colors that it forms an "O".
 
@@ -41,11 +41,11 @@ Running this command will store the colors into a buffer. The NeoPixel matrix wi
 let strip = neopixelExtended.create(DigitalPin.P0, 25, neopixelExtended.Format.RGB)
 basic.forever(function () {
     strip.setMatrix25(
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
     )
 })
 ```
@@ -53,7 +53,7 @@ basic.forever(function () {
 ## Show the matrix
 We are now setting commands to show the colors on the NeoPixel.
 
-Drag the block **``||neopixelExtended:neopixelExtended: show changes||``** below the current block. 
+Drag the block **``||neopixelExtended: show changes||``** below the current block. 
 
 Run the programm by pressing the download button. You should see your NeoPixel glow up with your colors. 
 
@@ -82,11 +82,11 @@ When you run the program you will not see any difference to before. This is beca
 let strip = neopixelExtended.create(DigitalPin.P0, 25, neopixelExtended.Format.RGB)
 basic.forever(function () {
     strip.setMatrix25(
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
     )
     strip.show()
     basic.pause(1000)
@@ -95,7 +95,7 @@ basic.forever(function () {
 
 ## Repeat previous blocks
 
-To change between two immages you will need to add the same blocks **``set Neopixel 5x5``**, **``show``** and **``pause``** again.
+To change between two images you will need to add the same blocks **``set Neopixel 5x5``**, **``show``** and **``pause``** again.
 
 Then change the colors in the second ``set Neopixel 5x5`` block that it represents a K.
 
@@ -105,20 +105,20 @@ Run the program by pressing download.
 let strip = neopixelExtended.create(DigitalPin.P0, 25, NeoPixelMode.RGB)
 basic.forever(function () {
     strip.setMatrix25(
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xE60026, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xFFD700, 0xFFD700)
     )
     strip.show()
     basic.pause(1000)
     strip.setMatrix25(
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xE60026, 0xff0000),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
-    neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700)
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xFFD700, 0xE60026, 0xff0000),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xE60026, 0xFFD700, 0xff0000),
+        neopixelExtended.rowOf5(0xff0000, 0xFFD700, 0xff0000, 0xff0000, 0xFFD700)
     )
     strip.show()
     basic.pause(1000)
