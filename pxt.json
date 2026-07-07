@@ -14,7 +14,8 @@
         "tutorial.md",
         "tutorial-matrix.md",
         "tutorial-matrix-wiring.md",
-        "_locales/de/tutorial.md"
+        "_locales/de/tutorial.md",
+        "tutorial-set-matrix-colors.md"
     ],
     "testFiles": [
         "test.ts"
