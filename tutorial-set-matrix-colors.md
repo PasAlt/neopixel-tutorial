@@ -93,7 +93,18 @@ strip.setMatrixColor(0, 0, 0xFFD700)
 strip.show()
 ```
 
-## Full code
+## Finish it yourself
+In the picture you can see what we want to achieve. Look at the schematics and try find out which position you have to use for each NeoPixel.
+
+Your code will use the following blocks five times:
+* **``||neopixelExtended:set matrix color||``** with the correct position
+* **``||neopixelExtended:show changes||``**
+* **``||basic:pause||``** with 500ms
+
+~hint Help
+If you need help then press the light bulb symbol and you can have a peek at the possible code.
+hint~
+
 ```blocks
 let strip = neopixelExtended.create(DigitalPin.P0, 25, neopixelExtended.Format.RGB)
 strip.setMatrixWiring(neopixelExtended.MatrixDirection.LeftTopToTheRight)

@@ -16,7 +16,7 @@ You will need
 Sometimes NeoPixel strips don't have pins that can easily be connected to.  You will have to solder that part on yourself (or ask your teacher to do it).
 hint~
 
-![Shows equipment from above. The four cables are red, black, white and green.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/docs/static/tutorial-equipment.jpg)
+![Shows equipment from above. The four cables are red, twice black and yellow.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/material.png)
 
 ## What you achieved @showdialog
 
@@ -71,7 +71,12 @@ You finished your code to make your NeoPixels glow. It is now time to connect yo
 ## Connect both ground cables
 
 The pin named GND beside the "VDC" label (sometimes "VCC") goes to the negative terminal of the battery.
+
+![Shows battery connected with a black cable from the batteries negative terminal (longer flap) to the ground pin of the NeoPixel.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-battery-ground.png)
+
 The pin named GND right beside the "DIN" label (sometimes "DI") goes to the ground pin of the micro:bit called "GND".
+
+![Shows same picture as above but additionaly with micro:bit connected with a black cable from the NeoPixels ground pin to the ground pin of the micro:bit (large pin on the left)](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-microbit-ground.png)
 
 ~hint Battery terminals
 
@@ -84,6 +89,7 @@ hint~
 We use black cables for the ground of the power supply and a black cable for the ground of the signal cable. 
 
 All ground pins are in most cases connected. NeoPixels often have two ground pins for convenience because you have to connect them to the ground of the micro:bit and to the ground of the power source (in our case the battery).
+
 hint~
 
 ## What you achieved @showdialog
@@ -94,9 +100,12 @@ You have now connected the two ground cables: One for the power supply circuit a
 
 Connect a cable from the battery (+) to the "VDC" (sometimes "VCC") labelled pin.
 
+![Shows same picture as in last section but with battery connected with a red cable from the batteries positive terminal (shorter flap) to the VDC (sometimes VCC) pin of the NeoPixel.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-battery-plus.png)
+
 Connect a cable from the micro:bit Pin 0 to the "DIN" (sometimes "DI") labelled pin on the NeoPixel. This is our signal that we will use to control the NeoPixels with our micro:bit.
 
-![Shows the connected micro:bit](/img/connected-micro-bit.png)
+![Shows same picture as before but additionaly with micro:bit connected with a yellow cable from the Neopixels signal "DI" (sometimes "DIN") to the signal pin "0" of the micro:bit (large pin on the left)](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-microbit-signal.png)
+![Shows close-up of a flipped NeoPixel pins with connected cables from top to botton: black, red, yellow, black. The cables leave the image on the right side.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-microbit-signal.png)
 
 ~hint Battery terminals
 
@@ -129,11 +138,11 @@ Check the following:
 * Your battery has enough power: If unsure, use another battery.
 * Broken NeoPixels. Replace them, if you are unsure.
 
+![Shows close-up of a flipped NeoPixel pins with connected cables from top to botton: black, red, yellow, black. The cables leave the image on the right side.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-microbit-signal.png)
+
 Still not working? Ask somebody for support (e.g. your teacher).
 
 hint~
-
-![Shows the connected micro:bit](/img/connected-micro-bit.png)
 
 ```blocks
 let strip = neopixelExtended.create(DigitalPin.P0, 8, neopixelExtended.Format.RGB)
