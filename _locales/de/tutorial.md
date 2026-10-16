@@ -1,5 +1,7 @@
 # NeoPixel-Einführung für Anfänger*innen
 
+### @explicitHints true
+
 ```package
 neopixel-extended=github:PasAlt/pxt-neopixel-matrix-extension
 ```
@@ -12,19 +14,15 @@ Du brauchst:
 * 4 Kabel, um die Battrie und den Neopixel-Streifen zu verbinden
 * ein Micro:Bit mit passendem USB-Kabel
 
-![Zeigt das Equipment von oben. Die vier Kabel sind rot, schwarz, weiss und grün.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/docs/static/tutorial-equipment.jpg)
+![Zeigt das Equipment von oben. Die vier Kabel sind rot, schwarz, weiss und grün.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/material.png)
 
-### ~ hint
-
+~hint Pins sind nicht immer einfach zu verbinden
 Manchmal haben die NeoPixel keine passenden Kontakte, um die sie einfach zu verbinden. Du wirst eine passenden Verbindung anlöten müssen (oder jemanden fragen die/der das für dich macht).
+hint~
 
-### ~
-
-### ~ avatar
+## Was du geschafft hast! @showdialog
 
 Du hast nun alles zusammen, um mit dem Tutorial zu starten.
-
-### ~
 
 ## Erstelle den NeoPixel Treiber
 
@@ -34,15 +32,15 @@ Dein NeoPixel Streifen enthält 8 NeoPixel. Du musst also die Anzahl NeoPixel au
 
 Den Rest kannst du so lassen wie es ist.
 
-### ~ avatar
-
-Du hast jetzt einen Treiber zum Steuern deiner NeoPixel erstellt. Ein Objekt, dass Hardware, wie deinen NeoPixel, steuert nennen wir Treiber. Diesen Treiber hast du jetzt in der Variable ``strip`` gespeichert.
-
-### ~
+#### ~ tutorialhint
 
 ```blocks
 let strip = neopixelExtended.create(DigitalPin.P0, 8, neopixelExtended.Format.RGB)
 ```
+
+## Was du geschafft hast! @showdialog
+
+Du hast jetzt einen Treiber zum Steuern deiner NeoPixel erstellt. Ein Objekt, dass Hardware, wie deinen NeoPixel, steuert nennen wir Treiber. Diesen Treiber hast du jetzt in der Variable ``strip`` gespeichert.
 
 ## Setze dir Farben deines NeoPixel Streifen
 
@@ -52,16 +50,15 @@ Wähle eine Farbe aus indem du auf das Farbelement drückst.
 
 Mit dem bisherigen Programm werden deine NeoPixel noch nicht aufleuchten, wenn du Download drückst. Wir haben bisher die Farbe nur gespeichert und müssen sie nun noch auf den NeoPixel Streifen übertragen.
 
-### ~ avatar
-
-Du hast jetzt deine Farbe im Zwischenspeicher abgelegt. Im nächsten Schritt lassen wir nun deine NeoPixel aufleuchten.
-
-### ~
 
 ```blocks
 let strip = neopixelExtended.create(DigitalPin.P0, 8, neopixelExtended.Format.RGB)
 strip.setColor(0xff0000)
 ```
+
+## Was du geschafft hast! @showdialog
+
+Du hast jetzt deine Farbe im Zwischenspeicher abgelegt. Im nächsten Schritt lassen wir nun deine NeoPixel aufleuchten.
 
 ## Farben auf dem NeoPixel anzeigen
 
@@ -69,17 +66,15 @@ strip.setColor(0xff0000)
 
 Drücke "Start", um deine NeoPixel im Simulator auf der linken Seite leuchten zu sehen.
 
-### ~ avatar
-
-Du hast nun dein Programm, um die NeoPixel leuchten zu lassen, fertig geschrieben. Nun ist es an der Zeit, dass du deinen NeoPixel Streifen mit dem Micro:Bit verbindest.
-
-### ~
-
 ```blocks
 let strip = neopixel.create(DigitalPin.P0, 8, neopixelExtended.Format.RGB)
 strip.setColor(0xff0000)
 strip.show()
 ```
+
+## Was du geschafft hast! @showdialog
+
+Du hast nun dein Programm, um die NeoPixel leuchten zu lassen, fertig geschrieben. Nun ist es an der Zeit, dass du deinen NeoPixel Streifen mit dem Micro:Bit verbindest.
 
 ## Verbinde den NeoPixel-Streifen mit dem Micro:Bit
 
@@ -90,21 +85,16 @@ In diesem Abschnitt verbindest du Micro:Bit mit dem NeoPixel.
 Der Anschluss mit dem Namen "GND" direkt neben dem Anschluss mit dem Namen "VDC" (manchmal auch "VDC") wird mit dem Minuspol der Batterie verbunden.
 Der Anschluss mit dem Namen "GND" direkt neben dem Anschluss mit dem Namen "DIN" (manchmal auch "DI") wird mit dem Micro:Bit verbunden am Anschluss "GND".
 
-### ~ hint
-
+~hint Welche Farben wir für die Verbindungen verwenden
 Für den negativen Pol der Stromverbindung verwenden wir oft schwarze Kabel. Für die Masse ("GND") bei Datenverbindungen verwenden wir oft ebenfalls schwarze Kabel.
 
 Die Masse ist oft verbunden miteinander. NeoPixel haben oft der Einfachheit halber zwei Masseanschlüsse. Einer wird mit der Batterie verbunden und der andere mit dem Micro:Bit.
 
-Die längere Lasche bei einer 4.5 Volt-Batterie ist normalerweise der negative Pol.
+Die längere Lasche bei einer 4.5 Volt-Batterie ist normalerweise der negative Pol.~hint
 
-### ~
-
-### ~ avatar
+## Was du geschafft hast! @showdialog
 
 Du hast nun zwei Massekabel verbunden: Eines für den Energieversorgungsstromkreislauf und eines für Signalstromkreislauf. Im nächsten Schritt schliessen wir nun beide Kreisläufe.
-
-### ~
 
 ### Verbinden zuerst das Strom- und dann das Datenkabel
 
@@ -114,13 +104,10 @@ Verbinde ein weiteres Kabel mit dem Micro:Bit am Pin 0 mit dem NeoPixel am Ansch
 
 ![Zeigt den komplett angeschlossenen Micro:Bit](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/docs/static/connection-4.jpg)
 
-### ~ hint
-
+~hint Welche Farben wir für die Verbindungen verwenden
 Für die den positiven Pol der Energieversorgung wird normalerweise ein rotes Kabel verwendet. Für das Signalkabel wird normalerweise gelb verwendet.
 
-Die kürzere Lasche bei einer 4.5 Volt-Batterie ist normalerweise der positive Pol.
-
-### ~
+Die kürzere Lasche bei einer 4.5 Volt-Batterie ist normalerweise der positive Pol.~hint
 
 ### ~ avatar
 
