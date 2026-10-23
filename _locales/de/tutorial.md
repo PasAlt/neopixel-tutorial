@@ -74,7 +74,7 @@ Du hast jetzt deine Farbe im Zwischenspeicher abgelegt. Im nächsten Schritt las
 
 Öffne den NeoPixel Tab erneut. Ziehe das Element **``||neopixelExtended:Änderungen anzeigen||``** unterhalb deine bisherigen Blöcke.
 
-Drücke "Start", um deine NeoPixel im Simulator auf der linken Seite leuchten zu sehen.
+Starte den Simulator: Drücke auf das Startsymbol, den Pfeil nach reichts. Dann siehst du deine NeoPixel im Simulator unterhalb des dargestellten Micro:Bit leuchten.
 
 ### ~ tutorialhint
 
@@ -98,6 +98,8 @@ In diesem Abschnitt beginnen wir damit die NeoPixel mit der Batterie und dem Mic
 
 Der Anschluss mit dem Namen "GND" direkt neben dem Anschluss mit dem Namen "VDC" (manchmal auch "VDC") wird mit dem Minuspol der Batterie verbunden.
 
+Benutze dazu ein schwarzes Kabel, wenn du eines hast.
+
 ![Zeigt die Batterie verbunden mit einem schwarzen Kabel vom negativ Pol (grosse Lasche) zum VDC pol des NeoPixels.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-battery-ground.png)
 
 ---
@@ -105,7 +107,6 @@ Der Anschluss mit dem Namen "GND" direkt neben dem Anschluss mit dem Namen "VDC"
 **Hinweise**: Die längere Lasche bei einer 4.5 Volt-Batterie ist normalerweise der negative Pol.
 
 Für den negativen Pol der Stromverbindung verwenden wir oft schwarze Kabel. 
-
 
 ## Was du geschafft hast! @showdialog
 
@@ -115,6 +116,8 @@ Du hast nun das erste Massekabel für die Energieversorgung des NeoPixels verbun
 ## Verbinde das Massekabel vom NeoPixel zum Micro:Bit
 
 Der Anschluss mit dem Namen "GND" direkt neben dem Anschluss mit dem Namen "DIN" (manchmal auch "DI") wird mit dem Micro:Bit verbunden am Anschluss "GND".
+
+Benutze dazu ein schwarzes Kabel, wenn du eines hast.
 
 ![Gleiches Bild wie voher aber nun ist der Micro:Bit mit eine schwarzen Kabel mit dem NeoPixel über den Massepin verbunden (grosser Pin auf der rechten Seite mit dem Namen GND)](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-microbit-ground.png)
 
@@ -130,10 +133,11 @@ Die Masse ist oft verbunden miteinander. NeoPixel haben oft der Einfachheit halb
 Du hast nun zwei Massekabel verbunden: Eines für den Energieversorgungsstromkreislauf und eines für Signalstromkreislauf. Im nächsten Schritt schliessen wir nun beide Kreisläufe.
 
 
-
 ## Verbinde die Energieversorgung mit NeoPixel
 
 Verbinde ein Kabel mit der Batterie am Pluspol mit dem NeoPixel am Anschluss mit dem Namen "VDC" (manchmal auch "VCC"). Das unsere Energieverbindung für den NeoPixel.
+
+Benutze dazu ein rotes Kabel, wenn du eines hast.
 
 ![Zeigt das gleiche Bild wie vorher aber nun ist ein rotes Kabel mit der Batterie (kurze Lasche) und mit dem "VDC (manchmal "VCC") Pin des NeoPixels verbunden.](https://raw.githubusercontent.com/PasAlt/neopixel-tutorial/refs/heads/master/img/connections-battery-plus.png)
 
@@ -151,6 +155,8 @@ Du hast nun den mit dem roten Kabel den ersten Stromkreis für die Energie gesch
 
 ## Verbinde das Signalkabel und schliessen den Kreislauf
 Verbinde ein Kabel mit dem Micro:Bit am Pin 0 mit dem NeoPixel am Anschluss mit dem Namen "DIN" (manchmal auch "DI"). Dies ist unser Datensignal mit dem wir den NeoPixel-Streifen mit unserem Micro:Bit steuern.
+
+Benutze dazu ein gelbes Kabel, wenn du eines hast.
 
 Achte darauf, dass alle Kabel sicher verbunden sind.
 
