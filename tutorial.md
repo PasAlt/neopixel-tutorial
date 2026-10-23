@@ -138,7 +138,7 @@ Check that all cables are securely connected.
 
 ~hint Cable colors
 
-We use red cables from the power source to the device and yellow cables for the signal.
+We use yellow cables for the signal.
 
 hint~
 
